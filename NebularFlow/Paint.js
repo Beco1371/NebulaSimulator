@@ -110,14 +110,6 @@ class Paint
     }
   }
 
-  /*CreateRect()
-  {
-    this.basesys[0] = new Point(createVector(0-this.distance/2, 0-this.radius/2), random(0.8,1.3));
-    this.basesys[1] = new Point(createVector(0+this.distance/2, 0-this.radius/2), random(0.8,1.3));
-    this.basesys[2] = new Point(createVector(0+this.distance/2, 0+this.radius/2), random(0.8,1.3));
-    this.basesys[3] = new Point(createVector(0-this.distance/2, 0+this.radius/2), random(0.8,1.3));
-  }*/
-
   DrawShape()
   {
     //drawingContext.shadowColor = color(red(this.col), green(this.col), blue(this.col),360);
