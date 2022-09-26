@@ -30,7 +30,7 @@ function applyBurn()
   image(img,0,0,width,height);
 }
 
-function mouseReleased()
+function mouseClicked()
 {
   if (count == 0)
     {
