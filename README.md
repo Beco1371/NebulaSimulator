@@ -1,7 +1,7 @@
 # NebulaSimulator
 Soft Nebula Generator/Noisy Nebula Generator With Flow Field
 
-Important parameters:
+<b>Important parameters:</b>
   1) bg images for burn application
   2) flow field density/variation
   3) 'mod' for different size canvases, though it works best with default 1080/1920
