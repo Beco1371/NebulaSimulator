@@ -112,8 +112,6 @@ class Paint
 
   DrawShape()
   {
-    //drawingContext.shadowColor = color(red(this.col), green(this.col), blue(this.col),360);
-  //drawingContext.shadowBlur = width;
     push();
     beginShape();
     if (this.strke == true)
