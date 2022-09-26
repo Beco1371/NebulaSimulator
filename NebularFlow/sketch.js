@@ -35,7 +35,7 @@ function draw()
   neb.drawClouds();
 }
 
-function mouseReleased()
+function mouseClicked()
 {
   if (count == 0)
   {
