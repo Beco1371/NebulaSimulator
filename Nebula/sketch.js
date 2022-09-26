@@ -73,46 +73,6 @@ function draw()
   neb.drawClouds();
 }
 
-
-function gridline(x1, y1, x2, y2)
-{
-  tmp = 0;
-  /* Swap coordinates if needed so that x1 <= x2 */
-  if (x1 > x2) { tmp = x1; x1 = x2; x2 = tmp; tmp = y1; y1 = y2; y2 = tmp; }
-
-  dx = x2 - x1;
-  dy = y2 - y1;
-  step = 1;
-
-  if (x2 < x1)
-    step = -step;
-
-  sx = x1;
-  sy = y1;
-  for (x = x1+step; x <= x2; x+=step) {
-    y = y1 + step * dy * (x - x1) / dx;
-    strokeWeight(1 + map(noise(sx, sy), 0, 1, -0.5, 0.5));
-    line(sx, sy, x + map(noise(x, y), 0, 1, -1, 1), y + map(noise(x, y), 0, 1, -1, 1));
-    sx = x;
-    sy = y;
-  }
-}
-
-function grid()
-{
-  spacing = 5;
-  for (i = -width; i < height + width; i+=spacing) {
-    stroke(255, random(5, 20));
-    gridline(i, 0, i + height, height);
-  }
-  for (i = height + width; i >= -width; i-=spacing) {
-    stroke(255, random(5, 20));
-    gridline(i, 0, i - height, height);
-  }
-}
-
-
-
 /* full screening will change the size of the canvas */
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
