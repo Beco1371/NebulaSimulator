@@ -62,6 +62,7 @@ class ParticleField
             let new_col = get(int(random(0,width)), int(random(pos.y - 100, pos.y  + 100)));
             if (new_col != "0,0,0,0") { col = new_col; }
           }
+          this.p_sys.push(new Particle(pos, col));
     }
   }
   }
